@@ -28,7 +28,7 @@ public class DemoApplicationRestApiTest {
     private TestRestTemplate restTemplate;
 
     @Test
-    public void greetingShouldReturnDefaultMessage() throws Exception {
+    public void helloTest() throws Exception {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/api/springhello",
                 String.class)).contains("Hello");
     }
